@@ -24,7 +24,7 @@ class ShinyOverride(@Suppress("unused") private val player: ServerPlayer) : Spaw
         val roll = nextInt(rate.toInt())
         debug("Rolled a $roll out of $rate (need to roll lower than 1)", uuid)
         if (roll < 1) {
-            debug("Setting to shiny")
+            debug("Setting to shiny", uuid)
             action.props.shiny = true
         }
     }
